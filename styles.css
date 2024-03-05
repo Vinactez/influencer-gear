@@ -1,0 +1,122 @@
+/* Common Shared styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.btn-primary {
+  background-color: #e02c6d;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 45px;
+}
+/* header styles */
+header {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+/* nav styles */
+nav {
+  margin: 60px 5px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.nav-title {
+  text-align: center;
+}
+.nav-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* banner styles */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 130px;
+}
+
+.banner-title {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.banner-description {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.banner-btn {
+  border: none;
+  border-radius: 40px;
+}
+
+.banner-img {
+  display: flex;
+}
+
+.banner-img {
+  position: relative;
+}
+
+.banner-img img {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+
+/*Resposive media Quary  */
+
+/* mobile devices */
+
+@media screen and (max-width: 576px) {
+  header {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  nav {
+    margin: 35px 5px;
+  }
+  /* nav styles */
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nav-options h5,
+  .fa-magnifying-glass {
+    display: none;
+  }
+  .fa-bars {
+    display: contents;
+  }
+  /* banner styles */
+  .banner {
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin: 20px;
+  }
+  .banner-img img {
+    height: 55%;
+    top: 80px;
+  }
+  .banner-img svg {
+    width: 100%;
+  }
+}
