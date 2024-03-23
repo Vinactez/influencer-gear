@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins";
+  background-color: Brand / Purple 100;
 }
 
 .btn-primary {
@@ -19,7 +20,7 @@ header {
 }
 /* nav styles */
 nav {
-  margin: 60px 5px;
+  margin: 60px;
 }
 
 .nav-container {
@@ -27,7 +28,7 @@ nav {
   justify-content: space-between;
 }
 
-.fa-bars {
+#menu {
   display: none;
 }
 
@@ -65,10 +66,7 @@ nav {
 .banner-btn {
   border: none;
   border-radius: 40px;
-}
-
-.banner-img {
-  display: flex;
+  text-align: center;
 }
 
 .banner-img {
@@ -81,8 +79,131 @@ nav {
   top: 10px;
 }
 
-/*Resposive media Quary  */
+/* main section */
+main {
+  margin-left: 165px;
+  margin-right: 165px;
+}
+section {
+  margin-top: 100px;
+}
+/* sponsors section */
+.sponsors-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
+/* collection section */
+
+.title-popu {
+  text-align: center;
+}
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.box {
+  width: 330px;
+  height: 475px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.box img {
+  margin: 17px 15px 16px 14px;
+}
+.box-title {
+  margin: 0 5px;
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  word-wrap: break-word;
+}
+.price {
+  margin: 27px 5px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  word-wrap: break-word;
+}
+.box-description {
+  margin: 0 5px;
+  color: #787885;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20.02px;
+  letter-spacing: 0.25px;
+  word-wrap: break-word;
+}
+
+.see-more {
+  color: #e02c6dde;
+  text-align: end;
+  font-weight: 700;
+  margin-right: 150px;
+}
+
+/* Featured Products */
+.Featured-products {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.featured-title {
+  color: #0a0826;
+  margin-bottom: 16px;
+  font-size: 38px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.featured-description {
+  color: #6c6c6c;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+/* footer  */
+
+footer {
+  background-color: #0a0826;
+  color: #fff;
+}
+
+.footer-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.copyright {
+  color: #d9dbe1;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.social-links i {
+  margin-left: 38px;
+}
+
+/*Resposive media Quary  */
 /* mobile devices */
 
 @media screen and (max-width: 576px) {
@@ -91,7 +212,14 @@ nav {
     margin-right: 10px;
   }
   nav {
-    margin: 35px 5px;
+    margin: 35px 5px 5px 0px;
+  }
+  main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  section {
+    margin-top: 30px;
   }
   /* nav styles */
   .nav-container {
@@ -100,23 +228,70 @@ nav {
     justify-content: space-evenly;
   }
   .nav-options h5,
-  .fa-magnifying-glass {
+  #search {
     display: none;
   }
-  .fa-bars {
+  #menu {
     display: contents;
   }
   /* banner styles */
   .banner {
     flex-direction: column-reverse;
     gap: 10px;
-    margin: 20px;
+    margin: 0px 10px;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 28px;
+  }
+  .banner-img {
+    align-items: center;
   }
   .banner-img img {
     height: 55%;
-    top: 80px;
+    top: 95px;
   }
   .banner-img svg {
-    width: 100%;
+    width: 90%;
+  }
+  /* sponsors section */
+  .sponsors-container {
+    flex-wrap: wrap;
+  }
+  .sponsors-container svg {
+    width: 80px;
+  }
+
+  /* collection section */
+
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  /* Featured section */
+  .Featured-products {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .featured-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .featured-btn {
+    margin-left: 18%;
+  }
+
+  .featured-description {
+    text-align: center;
+  }
+
+  .Featured-products img {
+    width: 300px;
   }
 }
